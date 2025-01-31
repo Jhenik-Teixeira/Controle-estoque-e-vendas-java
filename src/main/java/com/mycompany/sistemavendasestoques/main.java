@@ -20,7 +20,7 @@ public class main {
                 System.out.println("5. Gerenciar Fornecedores");
                 System.out.println("0. Sair");
                 System.out.println("==============================");
-                System.out.print("Escolha uma op��o: ");
+                System.out.print("Escolha uma opção: ");
                 int choice = scanner.nextInt();
 
                 switch (choice) {
@@ -40,11 +40,11 @@ public class main {
                         FornecedorView.gerenciarFornecedores(scanner);
                         break;
                     case 0:
-                        System.out.println("Saindo do sistema... At� mais!");
+                        System.out.println("Saindo do sistema... Até mais!");
                         exit = true;
                         break;
                     default:
-                        System.out.println("?? Op��o inv�lida! Tente novamente.");
+                        System.out.println("?? Opção inválida! Tente novamente.");
                 }
             }
         } catch (SQLException e) {

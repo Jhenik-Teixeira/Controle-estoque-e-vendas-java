@@ -18,11 +18,11 @@ public class ClienteView {
             System.out.println("==============================");
             System.out.println("1. Adicionar Cliente");
             System.out.println("2. Listar Clientes");
-            System.out.println("3.? Atualizar Cliente");
+            System.out.println("3. Atualizar Cliente");
             System.out.println("4. Excluir Cliente");
             System.out.println("0. Voltar ao Menu Principal");
             System.out.println("==============================");
-            System.out.print("Escolha uma op��o: ");
+            System.out.print("Escolha uma opção: ");
             int choice = scanner.nextInt();
 
             switch (choice) {
@@ -64,13 +64,13 @@ public class ClienteView {
                     System.out.print("ID do Cliente a excluir: ");
                     int idClienteExcluir = scanner.nextInt();
                     clienteDAO.deleteCliente(idClienteExcluir);
-                    System.out.println(" Cliente exclu�do com sucesso!");
+                    System.out.println(" Cliente excluído com sucesso!");
                     break;
                 case 0:
                     exit = true;
                     break;
                 default:
-                    System.out.println(" Op��o inv�lida! Tente novamente.");
+                    System.out.println(" Opçãoo inválida! Tente novamente.");
             }
         }
     }
